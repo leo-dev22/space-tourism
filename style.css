@@ -1,0 +1,110 @@
+/* colors
+hsl 230 35% 7% 
+hsl 0 0 0 100%
+hsl 231 77% 90%*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    
+}
+li,a,p{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    cursor: pointer;
+}
+/* xxxx    SETTINGS */
+
+body{
+    /* padding:3rem; */
+    /* height:900px;
+    width: 1440px; */
+    height: 100vh;
+    width: 100vw;
+    background: url(./assets/home/background-home-desktop.jpg ) no-repeat;
+    
+}
+nav{
+    /* border: 2px yellow solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:76px;
+  width:1232px; 
+  margin: 30px 48px;
+}
+.logo{
+    /* margin:55px 0 0 64px; */
+}
+hr{
+    height:1px;
+    width:414px;
+    background: white;
+    justify-items: center;
+    margin-left:30px; 
+    position:absolute;
+    top:69px;
+    left:167px;
+    z-index:2;
+   
+}
+.ul-list{
+    position: absolute;
+    top: 32px ;
+    left:580px ;
+    /* border:2px rgb(47, 54, 255) solid; */
+    height: inherit;
+    width: 700px;
+    background: hsl(0, 0, 100%);
+    backdrop-filter:blur(50rem); 
+    background:rgba(154, 151, 151, 0.697);
+    
+}
+
+
+ul{
+    
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width:542px;
+    /* border:2px red solid; */
+    position: absolute ;
+    top: 22px ;
+    left:100px ;  
+   
+}
+
+.flex{
+    display:flex;
+    justify-content: space-around;
+    gap:0px;
+}
+.desk-navigation a> [aria-hidden="true"]{
+ font-weight: 700;
+ margin-inline-end: .75em; 
+ font-family:"Barlow+Condensed",serif ;
+ font-size:16px;
+ letter-spacing: 2.7;
+}
+li{
+    width: 127px;
+    border: 2px red solid;
+   
+}
+/* MEDIA QUERY */
+@media  (max-width:35em){
+    .desk-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: rgb(180, 112, 70);
+        height:100%;
+        width:70%;
+        flex-direction:column;
+        padding:min(30vh,10rem) 2em;
+    }
+}
