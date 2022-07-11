@@ -11,7 +11,7 @@
 *,
 *::before,
 *::after {
-    outline: 1px solid red;
+/*     outline: 1px solid red; */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -29,8 +29,8 @@ span {
 /* xxxx    SETTINGS */
 body {
     overflow: hidden;
-    height:667px;
-    width: 375px;
+    min-height:667px;
+    min-width: 375px;
     background: url(assets/home/background-home-mobile.jpg ) no-repeat;
     
 }
