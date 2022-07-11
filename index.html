@@ -22,8 +22,11 @@
         <img src="assets/shared/logo.svg" alt="logo-image" />
       </div>  
       <!-- <hr /> -->
-     <input type="checkbox" name="" id="nav-toggle" class="nav-toggle">
-      <nav class="nav">     
+      <button aria-controls="nav" aria-expanded="false" class="mobile-nav-toggle">
+        <span class="btn-span"></span>
+      </button>
+     <!-- <input type="checkbox" name="" id="nav-toggle" class="nav-toggle"> -->
+      <nav data-visible="false" class="nav" id="nav">     
         <ul class="desk-navigation flex" id="desk-navigation">
           <li>
             <a href="index.html"><span aria-hidden="true">00</span>Home</a>
@@ -39,11 +42,11 @@
           </li>
         </ul>
      </nav>
-     <label for="nav-toggle" class="nav-toggle-label">
-       <span></span>
-     </label>
+     <!-- <label for="nav-toggle" class="nav-toggle-label">
+       <span><img src="assets/shared/icon-hamburger.svg" alt=""></span>
+     </label> -->
     </header> 
-    <main>
+    <!-- <main>
       <section>
         <p>So, you want to travel to</p>
         <p>Space</p>
@@ -57,6 +60,6 @@
       <section>
         <p>Explore</p>
       </section>
-    </main>
+    </main> -->
   </body>
 </html>
