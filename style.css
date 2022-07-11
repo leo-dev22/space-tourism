@@ -34,7 +34,7 @@ body {
 /*     height:667px; */
     max-height:fit-content;
     width:clamp(375px,475px,600px);
-    background: url(assets/home/background-home-mobile.jpg ) no-repeat cover;
+    background: url(assets/home/background-home-mobile.jpg ) no-repeat;
     
 }
 header {
