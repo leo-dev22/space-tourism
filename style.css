@@ -15,7 +15,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow:hidden;
+    
 }
 li,a,p{
     text-decoration: none;
@@ -31,9 +31,9 @@ span {
 
 body {
     overflow: hidden;
-/*     height:667px; */
-    max-height:fit-content;
-    width:clamp(375px,475px,600px);
+    height:667px;
+
+    width:375px;
     background: url(assets/home/background-home-mobile.jpg ) no-repeat;
     
 }
