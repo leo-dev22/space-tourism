@@ -30,7 +30,7 @@ span {
 body {
     overflow: hidden;
     min-height:667px;
-    min-width: 375px;
+    width:clamp(375px,400px,475px);
     background: url(assets/home/background-home-mobile.jpg ) no-repeat;
     
 }
