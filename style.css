@@ -205,8 +205,11 @@ main {
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: var(--clr-black);
+}
 
-
-
-
+/* -----DESTINATION PAGE */
+.mob-dest-A {
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+    height: 850px;
+    width: 375px;
 }
