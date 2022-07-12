@@ -122,6 +122,7 @@ main {
 }
 
 .section1-main {
+    margin-top: 2px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -144,7 +145,7 @@ main {
     letter-spacing: 2.7px;
     text-align: center;
     height: 19px;
-    color: white;
+    margin-top: 7px;
     margin-bottom: 2px;
     line-height: auto;
     align-items: top;
@@ -156,14 +157,15 @@ main {
     height: 100px;
     width: 327px;
     line-height: 100px;
-    margin-top: 1px;
+    padding-top: 14px;
     text-align: center;
     letter-spacing: 0;
     align-self: top;
+    color: white;
 }
 
 .para3 {
-    font-size: var(--font-family3);
+    font-family: var(--font-family3);
     font-size: 15px;
     line-height: 25px;
     align-self: top;
@@ -174,8 +176,37 @@ main {
     font-weight: 400;
     text-align: center;
     text-transform: initial;
-    margin-top: 20px;
-    padding: 3px;
+    margin-top: 27px;
+    padding: 5px;
+    }
+    
+    .section2-main,
+    .btn {
+        border: none;
+        outline: none;
+        height: 150px;
+        width: 150px;
+    }
+    .btn {
+        margin-top: 90px;
+        border-radius: 50%;
+        background-color: white;
+
+}
+
+.sect2-span {
+    position: absolute;
+    top: 537px;
+    left: 142.5px;
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22.95px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: var(--clr-black);
+
+
 
 
 }
