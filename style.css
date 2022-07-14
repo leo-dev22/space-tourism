@@ -68,11 +68,13 @@ header {
     z-index: 9999;
 }
 
+/* /// */
 .mobile-nav-toggle[aria-expanded='true'] {
     background: url(assets/shared/icon-close.svg) no-repeat;
 }
 
 .nav {
+    z-index: 99;
     position: absolute;
     text-align: center;
     top: 0%;
@@ -255,7 +257,10 @@ main {
     /* text-align: center; */
 }
 
-.mob-moon-img {
+.mob-moon-img1,
+.mob-moon-img2,
+.mob-moon-img3,
+.mob-moon-img4 {
     height: 170px;
     width: 170px;
     position: absolute;
@@ -274,5 +279,38 @@ main {
     top: 176px;
     background: #0b0d17;
     filter: blur(67.917px);
+}
+
+.dest-mob-choice {
+    display: flex;
+    /* position: absolute; */
+    top: 335px;
+    left: 69px;
+    /* border: 3px red solid; */
+    width: 237.5px;
+    height: 28px;
+}
+
+.dest-mob-list {
+    font-family: var(--font-family1);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    line-height: 16.8px;
+    /* width: 35px; */
+    height: 16px;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.dest-mob-list::after {
+    content: '';
+    position: absolute;
+    top: 89.29%;
+    right: 84.84%;
+    width: 36px;
+    height: 3px;
+    color: #fff;
 
 }
