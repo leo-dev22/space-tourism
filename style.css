@@ -283,7 +283,7 @@ main {
 
 .dest-mob-choice {
     display: flex;
-    /* position: absolute; */
+    position: absolute;
     top: 335px;
     left: 69px;
     /* border: 3px red solid; */
@@ -295,11 +295,13 @@ main {
     font-family: var(--font-family1);
     font-weight: 400;
     font-size: 14px;
+    color:var(--clr-light-grey);
     letter-spacing: 2.36px;
     line-height: 16.8px;
     /* width: 35px; */
     height: 16px;
     margin-left: 0.5em;
+    margin-right: 1.5em;
     text-transform: uppercase;
     position: relative;
 }
@@ -307,8 +309,10 @@ main {
 .dest-mob-list::after {
     content: '';
     position: absolute;
-    top: 89.29%;
-    right: 84.84%;
+    left: 116px;
+    top: 176px;
+    /* top: 9.29%;
+        right: 4.84%; */
     width: 36px;
     height: 3px;
     color: #fff;
