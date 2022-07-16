@@ -4,60 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space tourism website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+   <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Space tourism website</title>
+  <script src="main.js" defer></script>
  
 </head>
-<body class="mob-dest-A">
+<body class="dest">
+  <a class="skip-to-content" href="#main">Skip to content</a>
     <header>
         <div class="logo">
           <img src="assets/shared/logo.svg" alt="logo-image" />
         </div>  
         <!-- <hr /> -->
         <button aria-controls="nav" aria-expanded="false" class="mobile-nav-toggle">
-          <span class="btn-span"></span>
+          <span class="btn-span" aria-expanded="false"></span>
         </button>
         <nav data-visible="false" class="nav" id="nav">     
-          <ul class="desk-navigation flex" id="desk-navigation">
+          <ul  class="desk-navigation flex line-indicator" id="desk-navigation">
             <li>
-              <a href="index.html"><span aria-hidden="true">00</span>Home</a>
+              <a href="index.html" class="ft-sans-cond uppercase text-white letter-spacing-2"><span aria-hidden="true">00</span>Home</a>
+            </li>
+            <li class="active">
+              <a href="destination.html" class="ft-sans-cond uppercase text-white letter-spacing-2"><span aria-hidden="true">01</span>Destination</a>
             </li>
             <li>
-              <a href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+              <a href="crew.html" class="ft-sans-cond uppercase text-white letter-spacing-2"><span aria-hidden="true">02</span>Crew</a>
             </li>
             <li>
-              <a href="crew.html"><span aria-hidden="true">02</span>Crew</a>
-            </li>
-            <li>
-              <a href="technology.html"><span aria-hidden="true">03</span>Technology</a>
+              <a href="technology.html" class="ft-sans-cond uppercase text-white letter-spacing-2"><span aria-hidden="true">03</span>Technology</a>
             </li>
           </ul>
        </nav>
        
     </header> 
-    <main class="main-dest-mob">
-      <p class="dest-mob-para1"><span class="dest-mob-span">01</span>Pick your destination</p>
+    <main id="main"  class="main-dest-mob grid-container grid-container--destination flow">
+      <p class="dest-mob-para1 number" ><span class="dest-mob-span " aria-hidden="true">01</span>Pick your destination</p>
       <div class="dest-mob-img">
-      <img  aria-expanded="true" class="mob-moon-img1" src="assets/destination/image-moon.png" alt="Moon image">
-      <img  aria-expanded="false" class="mob-moon-img2" src="assets/destination/image-mars.png" alt="Mars image">
-      <img  aria-expanded="false" class="mob-moon-img3" src="assets/destination/image-europa.png" alt="Europa image">
-      <img  aria-expanded="false" class="mob-moon-img4" src="assets/destination/image-titan.png" alt="Titan image">
+      <picture class="mob-img-moon" >
+        <source srcset="assets/destination/image-moon.webp" type="image/webp">
+        <img src="assets/destination/image-moon.png" alt="Moon image">
+      </picture>  
+      <picture hidden class="mob-img-mars">
+        <source srcset="assets/destination/image-mars.webp" type="image/webp">
+        <img src="assets/destination/image-mars.png" alt="Mars image">
+      </picture>  
+      <picture hidden class="mob-img-europa">
+        <source srcset="assets/destination/image-europa.webp" type="image/webp">
+        <img src="assets/destination/image-europa.png" alt="Europa image">
+      </picture>
+      <picture hidden  class="mob-img-titan">
+        <source srcset="assets/destination/image-titan.webp" type="image/webp">
+        <img src="assets/destination/image-titan.png" alt="titan image">
+      </picture>  
       </div>
       
-      <div >
-        <ul class="dest-mob-choice">
-          <li class="dest-mob-list">Moon</li>
-          <li class="dest-mob-list">Mars</li>
-          <li class="dest-mob-list">Europa</li>
-          <li class="dest-mob-list">Titan</li>
-        </ul>
-      </div>  
-      <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+      <div class="btn-list line-indicator dest-mob-choice flex">
+        <button data-image="moon-image" tabindex="0" class="dest-mob-list uppercase ft-sans-cond text-accent letter-spacing-2" aria-controls="tab-moon" role="tab" aria-selected="true">Moon</button>
+        <button data-image="mars-image" tabindex="-1" class="dest-mob-list uppercase ft-sans-cond text-accent letter-spacing-2" aria-controls="tab-mats" role="tab" aria-selected="false">Mars</button>
+        <button data-image="europa-image" tabindex="-1" class="dest-mob-list uppercase ft-sans-cond text-accent letter-spacing-2" aria-controls="tab-europa" role="tab" aria-selected="false">Europa</button>
+        <button data-image="titan-image" tabindex="-1" class="dest-mob-list uppercase ft-sans-cond text-accent letter-spacing-2" aria-controls="tab-titan" role="tab" aria-selected="false">Titan</button>
+      </div>
+      
+       
+    
     </main>
       <!-- 
   01 Pick your destination

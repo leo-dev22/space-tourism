@@ -238,7 +238,7 @@ main {
 }
 
 /* -----DESTINATION PAGE */
-.mob-dest-A {
+.dest {
     background-image: url(assets/destination/background-destination-mobile.jpg);
     height: 850px;
     width: 375px;
@@ -257,10 +257,10 @@ main {
     /* text-align: center; */
 }
 
-.mob-moon-img1,
-.mob-moon-img2,
-.mob-moon-img3,
-.mob-moon-img4 {
+.mob-img-moon,
+.mob-img-mars,
+.mob-img-europa,
+.mob-img-titan {
     height: 170px;
     width: 170px;
     position: absolute;
