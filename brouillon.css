@@ -61,13 +61,15 @@ select {
     display: block;
 } */
 
-.flow>*:where(:not(:first-child)) {
+/* .flow>*:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
 }
 
 .flow--space-small {
     --flow-space: .75rem;
 }
+
+*/
 
 /* .container {
     padding-inline: 2em;
@@ -583,8 +585,9 @@ select {
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
+
 /* second part */
-body {
+/* body {
     overflow: hidden;
     height: 667px;
     width: 375px;
@@ -677,6 +680,8 @@ nav[data-visible='true'] {
 .nav-toggle {
     display: none;
 }
+
+*/
 
 /*----- MAIN ------ */
 main {

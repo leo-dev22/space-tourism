@@ -79,29 +79,13 @@ p {
     font-weight: 400;
 }
 
-/* 
-li,
-a,
-p {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    cursor: pointer;
-}
 
-span {
-    color: white;
-    cursor: pointer;
-}
-
-*/
 /* xxxx    SETTINGS */
 
 
 
 /* body set up */
 body {
-    border: red 3px solid;
     background-color: hsl(var(--clr-black));
     min-height: 100vh;
     overflow-x: hidden;
@@ -109,8 +93,9 @@ body {
     font-family: var(--font-barlow-sans);
     color: hsl(var(--clr-light-grey));
     line-height: 1.5;
-    display: grid;
-    grid-template-columns: min-content 1fr;
+    position: relative;
+    /* display: grid;
+                                                                                                    grid-template-columns: min-content 1fr; */
 }
 
 /* arrange elements easier to work with */
@@ -280,7 +265,7 @@ picture {
     color: hsl(var(--clr-white) / .25);
 }
 /* /////////////////////////////// */
-.explore-button {
+/* .explore-button {
     font-size: 2rem;
     position: relative;
     z-index: 10;
@@ -310,10 +295,11 @@ picture {
     transform: scale(1.5);
 }
 
+*/
 .container {
     padding-inline: 2em;
     margin-inline: auto;
-    max-width: 80rem;
+    /* max-width: 80rem; */
 }
 
 .btn-span {
@@ -336,7 +322,14 @@ picture {
 }
 
 .logo {
-    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    /* added */
+    position:absolute;
+    top: 24px;
+    left: 24px;
+    height: 40px;
+    aspect-ratio: 1;
+    /*xx added xx*/
+    /* margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem); */
 }
 
 /* .navigation-primary {
@@ -359,15 +352,45 @@ picture {
 }
 
 */
+.section1-main {
+    position: absolute;
+    top: 112px;
+    left: 24px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 327px;
+    height: 276px;
+}
+
+.section2-main a {
+    position: absolute;
+    top: 469px;
+    left: 113px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* .section2-main a::after {
+    content: '';
+    width: 150px;
+    height: 150px;
+
+} */
 /* ----------------- */
 .mobile-nav-toggle {
     position: absolute;
-    width: 2rem;
-    aspect-ratio: 1;
+    top: 33px;
+    left: 327px;
+    width: 24px;
+    height: 21px;
+    /* aspect-ratio: 1; */
     background: url(assets/shared/icon-hamburger.svg) no-repeat;
     border: none;
-    top: 2rem;
-    right: 2rem;
     z-index: 9999;
     }
     
@@ -467,9 +490,16 @@ picture {
 
 /* Page specific background      */
 /* ----------------------------- */
+.border {
+    border: 2px greenyellow solid;
+}
 body {
     background-size: cover;
     background-position: bottom center;
+    /* added */
+    max-width: 375px;
+    max-height: 667px;
+    /* xx added xx */
 }
 /* home */
 .home {
