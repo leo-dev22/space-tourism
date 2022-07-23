@@ -20,7 +20,8 @@
     --fs-400: 1.5rem;
     --fs-300: 1rem;
     --fs-200: 0.9375rem;
-    --fs-100: 0.875rem;
+    --fs-16: 16px;
+    --fs-80: 80px;
 
 }
 
@@ -75,7 +76,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
     font-weight: 400;
 }
 
@@ -83,7 +85,17 @@ p {
 /* xxxx    SETTINGS */
 
 
+section>span {
+    line-height: 100px;
+    color: #ffffff;
+}
 
+section>p {
+    width: 327px;
+    height: 125px;
+    line-height: 25px;
+    color: hsl(var(--clr-light-grey));
+}
 /* body set up */
 body {
     background-color: hsl(var(--clr-black));
@@ -169,6 +181,9 @@ picture {
 .font-barlow {
     font-family: var(--font-barlow);
 }
+.center {
+    text-align: center;
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -187,11 +202,23 @@ picture {
 }
 
 .letter-spacing-3 {
-    letter-spacing: 2.35px;
-}
-
-.fs-100 {
-    font-size: var(--fs-100);
+    letter-spacing: 1.25px;
+    }
+    .fs-15 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .fs-16 {
+        font-size: var(--fs-16);
+    }
+    
+    .fs-20 {
+        font-size: 20px;
+    }
+    
+    .fs-80 {
+        font-size: var(--fs-80);
 }
 
 .fs-200 {
@@ -373,6 +400,18 @@ picture {
     width: 150px;
     border-radius: 50%;
     text-align: center;
+    background: white;
+    /* z-index: -100; */
+    }
+    
+    .section2-main span {
+        position: absolute;
+        top: 40%;
+        left: 18%;
+        /* z-index: 100;  
+                            justify-content: center;
+                            align-items: center;*/
+        color: black;
 }
 
 /* .section2-main a::after {
